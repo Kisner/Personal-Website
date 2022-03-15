@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ryan Kisner</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.page{
+min-height:100%;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: rgb(0, 0, 0);
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/static/images/coverphoto.jpg');
+  min-height: 100%;
+}
+
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/static/images/IMG-0705.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/static/images/coverphoto.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
+<body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">ABOUT ME</a>
+      <a href="#music" class="w3-bar-item w3-button w3-hide-small">MY MUSIC</a>
+      <a href="#work" class="w3-bar-item w3-button w3-hide-small">MY WORK</a>
+      <a href="/static/images/Ryan_Kisner_Resume_15-03-2022-01-11-36.pdf" class="w3-bar-item w3-button w3-hide-small">RESUME</a>
+    </div>
+  
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#music" class="w3-bar-item w3-button" onclick="toggleFunction()">MY MUSIC</a>
+      <a href="#work" class="w3-bar-item w3-button" onclick="toggleFunction()">MY WORK</a>
+      <a href="/static/images/Ryan_Kisner_Resume_15-03-2022-01-11-36.pdf" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+    </div>
+  </div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small">RYAN KISNER</span>
+    </div>
+  </div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <center>
+  <p class="w3-center"><em>Software Engineer | Musician</em></p>
+</center>
+  <p>   Graduate of University of Maryland, Baltimore County. I have a Bachelor's degree in Computer Science with a minor in Music and an Associate of Arts Degree in Music.
+      For my music side, I have been playing guitar since my freshmen year of highschool (2012). From there my interesting in different instruments expanded to bass, drums, piano, 
+      and eventually ended with classical guitar in university. I have been a part of many bands and performed in numerous live shows. Most notably opening for bands such as 
+      Alien Ant Farm, Mushroomhead, HELLYEAH, and Clutch. After high school, I moved my focus away from playing in bands and more into creating my own music as well as studying
+    the classial guitar. You can find links to my music on this website.</p>
+
+    <p>
+        After graduating from Frederick Community College, I transferred to University of Maryland, Baltimore County with the intent of majoring in Music Performance.
+        However, I moved away from that major and moved towards Computer Science. From my time as a Computer Science major at UMBC, I have been exposed to a wide range 
+        of different topics in Computer Science. I have experience in Object-Oriented Programming, Information Retrieval, Computer Architecture, Computer Security, Data Structures, Artificial Intelligence,
+        Computer Networks, Kali Linux, Ghidra, and IDA Pro. My languages include Python, C++, C, Assembly (Intel x86), HTML, and CSS. I am now currently a Software Engineer Associate at Fannie Mae.
+    </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3- w3-padding-small">
+        <img src="/static/images/IMG-5917.JPG" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+      </div>
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-small">
+        <img src="/static/images/IMG-0678.JPG" class="w3-round w3-image" alt="Photo of Me" width="500" height="333">
+      </div>
+      </div>
+    </div>
+
+<!--Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">MY MUSIC</span>
+  </div>
+</div>
+
+<!-- Container (Music) -->
+  <div class="w3-content w3-container w3-padding-64" id="music">
+    <center>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/27iF97NFNfbDHgRqDQg1yT?utm_source=generator&theme=0" width="100%" height="350" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1227336049&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ryankisnerguitar" title="Kisner" target="_blank" style="color: #cccccc; text-decoration: none;">Kisner</a> · <a href="https://soundcloud.com/ryankisnerguitar/overload" title="Overload" target="_blank" style="color: #cccccc; text-decoration: none;">Overload</a>
+  </div>
+      <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1409782996&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ryankisnerguitar" title="Kisner" target="_blank" style="color: #cccccc; text-decoration: none;">Kisner</a> · <a href="https://soundcloud.com/ryankisnerguitar/sets/koyunbaba" title="Koyunbaba" target="_blank" style="color: #cccccc; text-decoration: none;">Koyunbaba</a></div>
+      <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1352895415&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ryankisnerguitar" title="Kisner" target="_blank" style="color: #cccccc; text-decoration: none;">Kisner</a> · <a href="https://soundcloud.com/ryankisnerguitar/sets/appalachia" title="Appalachia" target="_blank" style="color: #cccccc; text-decoration: none;">Appalachia</a></div>
+      <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1409781868&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ryankisnerguitar" title="Kisner" target="_blank" style="color: #cccccc; text-decoration: none;">Kisner</a> · <a href="https://soundcloud.com/ryankisnerguitar/sets/equations-of-beauty" title="Equations of Beauty" target="_blank" style="color: #cccccc; text-decoration: none;">Equations of Beauty</a></div>
+      <iframe width="100%" height="350" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/242160320&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ryankisnerguitar" title="Kisner" target="_blank" style="color: #cccccc; text-decoration: none;">Kisner</a> · <a href="https://soundcloud.com/ryankisnerguitar/sets/the-quest-ep" title="The Quest EP" target="_blank" style="color: #cccccc; text-decoration: none;">The Quest EP</a></div>
+  </div>
+</center>
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="work">
+  <h3 class="w3-center">MY WORK</h3>
+  <center>
+    <!--      link for source code  -->
+      	<h2><a href="https://github.com/Kisner/Melody-Madness"> Melody Madness </a></h2>
+      </center>
+      
+    <center>
+        <!--      link for source code  -->
+              <h2><a href="https://github.com/Kisner/Search-Engine"> HTML Search Engine </a></h2>
+          </center>
+    
+    <center>
+            <!--      link for source code  -->
+                  <h2><a href="https://github.com/Kisner/KisMusic"> KisMusic </a></h2>
+              </center>
+
+<!-- Footer -->
+<center>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.linkedin.com/in/ryan-kisner-029351231/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://github.com/Kisner"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <a href="https://open.spotify.com/artist/27iF97NFNfbDHgRqDQg1yT?si=Kkwb7l9kSfKsSMT0o_DluA"><i class="fa fa-spotify w3-hover-opacity"></i></a>
+    <a href="https://soundcloud.com/ryankisnerguitar"><i class="fa fa-soundcloud w3-hover-opacity"></i></a>
+    <a href="https://music.apple.com/us/artist/ryan-kisner/1135671316"><i class="fa fa-apple w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCjzfvFR88EvAYftbqkkcu4Q/featured"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
+
+</center>
+
+</body>
+</html>
+
