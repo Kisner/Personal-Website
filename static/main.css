@@ -22,3 +22,17 @@
   min-height: 400px;
 }
 
+
+.w3-bar{
+  display: inline-block;
+  border: 2px solid black;
+  width: 100%;
+}
+.w3-bar a {
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  float: left;
+  width: 15%;
+  background: #933737; }
