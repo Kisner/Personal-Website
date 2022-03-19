@@ -23,16 +23,12 @@
 }
 
 
-.w3-top{
-  display: inline-block;
-  border: 2px solid black;
-  width: 100%;
+.myNavbar{
+  border: 10px solid white;
 }
-.w3-top a {
-  padding: 10px 15px;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  float: left;
-  width: 15%;
-  background: #933737; }
+
+.myNavbar:after{
+  content: "";
+  display: table;
+  clear: both;
+}
