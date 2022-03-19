@@ -23,12 +23,12 @@
 }
 
 
-.w3-bar{
+.w3-top{
   display: inline-block;
   border: 2px solid black;
   width: 100%;
 }
-.w3-bar a {
+.w3-top a {
   padding: 10px 15px;
   text-align: center;
   color: white;
