@@ -6,19 +6,19 @@
 }
 
 .bgimg-1 {
-  background-image: url('/static/images/coverphoto.jpg');
+  background-image: url('/static/img/coverphoto.jpg');
   min-height: 100%;
 }
 
 /* Second image (Portfolio) */
 .bgimg-2 {
-  background-image: url("/static/images/coverphoto.jpg");
+  background-image: url("/static/img/coverphoto.jpg");
   min-height: 400px;
 }
 
 /* Third image (Contact) */
 .bgimg-3 {
-  background-image: url("/static/images/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+  background-image: url("/static/img/james-harrison-vpOeXr5wmR4-unsplash.jpg");
   min-height: 400px;
 }
 
